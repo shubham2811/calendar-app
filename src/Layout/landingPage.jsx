@@ -61,7 +61,7 @@ export const LandingPage = () => {
         </Grid>
       ) : (
         <>
-          <Grid size={2}>
+          <Grid size={{ sm: 6, md: 2 }}>
             <Dropdown
               id="timezone-select"
               inputLabel="Choose Timezone"
@@ -71,7 +71,7 @@ export const LandingPage = () => {
               fullWidth
             />
           </Grid>
-          <Grid size={2}>
+          <Grid size={{ sm: 6, md: 2 }}>
             <Dropdown
               id="maxDays-select"
               inputLabel="Choose Max Days"
@@ -82,7 +82,7 @@ export const LandingPage = () => {
             />
           </Grid>
 
-          <Grid size={3}>
+          <Grid size={{ sm: 12, md: 3 }}>
             <Calendar
               mode="range"
               maxDays={maxDays}
